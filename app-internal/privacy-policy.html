@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Internal Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: light dark;
+        --font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+        --accent: #2563eb;
+        --bg: #f9fafb;
+        --text: #0f172a;
+        --muted: #475569;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: var(--font-family);
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem 4rem;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(2rem, 5vw, 2.75rem);
+        color: var(--accent);
+      }
+
+      h2 {
+        margin-top: 2.25rem;
+        color: var(--accent);
+      }
+
+      h3 {
+        margin-top: 1.5rem;
+        color: var(--muted);
+      }
+
+      p,
+      li {
+        font-size: 1rem;
+        color: var(--text);
+      }
+
+      ul,
+      ol {
+        padding-left: 1.25rem;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 1rem;
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      }
+
+      .metadata {
+        font-size: 0.95rem;
+        color: var(--muted);
+      }
+
+      .tagline {
+        font-size: 1.1rem;
+        color: var(--muted);
+        margin: 0;
+      }
+
+      .contact {
+        background: #dbeafe;
+        color: #1e3a8a;
+        border-left: 4px solid var(--accent);
+        padding: 1.25rem;
+        border-radius: 0.75rem;
+      }
+
+      section + section {
+        margin-top: 1.5rem;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.9rem;
+        color: var(--muted);
+        margin-top: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="metadata">Last updated: November 17, 2025</p>
+        <h1>Privacy Policy</h1>
+        <p class="tagline">
+          This Privacy Policy explains how App Internal ("we", "our", or "us")
+          collects, uses, and protects information when you use our Kotlin
+          Multiplatform application for Android and iOS.
+        </p>
+      </header>
+
+      <div class="card">
+        <h2>1. Scope & Acceptance</h2>
+        <p>
+          By installing or using the Services, you acknowledge that you have
+          read and understood this Policy. If you do not agree with it, please
+          uninstall the app and discontinue use.
+        </p>
+      </div>
+
+      <section class="card">
+        <h2>2. Information We Collect</h2>
+        <h3>2.1 Information you provide directly</h3>
+        <ul>
+          <li>
+            <strong>Account and profile data</strong> such as name, email
+            address, organization, or role when supplied for authentication or
+            personalization.
+          </li>
+          <li>
+            <strong>Support requests</strong> including the contents of
+            messages, attachments, and diagnostics you voluntarily send to us.
+          </li>
+        </ul>
+        <h3>2.2 Information collected automatically</h3>
+        <ul>
+          <li>
+            <strong>Usage and diagnostics</strong> from Firebase Analytics,
+            Crashlytics, and our Kermit logging stack (e.g., feature usage, app
+            version, timestamp, stability metrics).
+          </li>
+          <li>
+            <strong>Device data</strong> such as model, operating system,
+            language, time zone, advertising identifiers, and network status.
+          </li>
+          <li>
+            <strong>Log data</strong> captured via Ktor client logging and
+            DataStore to detect errors, latency, and security anomalies.
+          </li>
+        </ul>
+        <h3>2.3 Platform-specific sensors & permissions</h3>
+        <ul>
+          <li>
+            <strong>Location</strong> data via Compass (precise GPS coordinates
+            or derived geofences) when you grant permission for location-aware
+            workflows.
+          </li>
+          <li>
+            <strong>Camera, QR/Barcode, and media</strong> using Wangs Camera
+            and EasyQRScan for scanning codes or capturing documents; media is
+            processed locally unless you initiate an upload.
+          </li>
+          <li>
+            <strong>Photos & Files</strong> when you choose to import
+            attachments or screenshots; we only access the items you explicitly
+            select.
+          </li>
+        </ul>
+        <h3>2.4 Data from integrations</h3>
+        <ul>
+          <li>
+            <strong>Backend APIs</strong> consumed via Ktor may provide account
+            metadata, attendance records, or configuration necessary to deliver
+            the Services.
+          </li>
+          <li>
+            <strong>Third-party SDKs</strong> (Google Play Services, Firebase,
+            Google Maps/Location APIs) may receive device identifiers needed to
+            operate.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>3. How We Use Information</h2>
+        <ul>
+          <li>
+            Deliver core functionality such as authentication, attendance
+            submission, QR validation, and location-based workflows.
+          </li>
+          <li>
+            Provide customer support, respond to requests, and troubleshoot
+            issues using diagnostics and crash reports.
+          </li>
+          <li>
+            Monitor performance, enhance stability, and prioritize features
+            through aggregated analytics.
+          </li>
+          <li>
+            Enforce security policies, prevent fraud, and comply with legal
+            obligations.
+          </li>
+          <li>
+            Personalize notifications, content, or configurations based on your
+            environment flavor (development vs. production).
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>4. Sharing & Disclosure</h2>
+        <ul>
+          <li>
+            <strong>Service providers</strong> such as Firebase, Google Cloud,
+            or managed hosting partners that process data on our behalf under
+            contractual safeguards.
+          </li>
+          <li>
+            <strong>Business operations</strong> including affiliates within the
+            ASDF group who help deliver administrative or technical services.
+          </li>
+          <li>
+            <strong>Legal compliance</strong> when required by applicable law,
+            regulation, legal process, or enforceable governmental request.
+          </li>
+          <li>
+            <strong>Business transfers</strong> in connection with a merger,
+            acquisition, restructuring, or sale of assets, provided the
+            recipient honors this Policy.
+          </li>
+          <li>
+            We do <strong>not</strong> sell personal data to third parties for
+            advertising or marketing.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>5. Data Storage & Retention</h2>
+        <p>
+          Data is stored securely using Google Cloud (Firebase) regions
+          appropriate to your deployment. We retain information only as long as
+          necessary for the purposes outlined in this Policy, unless a longer
+          retention period is required by law or internal compliance
+          obligations. You may request deletion, and we will remove data unless
+          retention is mandated.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>6. Security</h2>
+        <p>
+          We implement industry-standard safeguards, including TLS encryption
+          for network calls (via Ktor), scoped platform permissions, secure
+          keystores, access controls, and continuous monitoring. However, no
+          system is perfectly secure, and we cannot guarantee absolute
+          protection. Please notify us promptly if you suspect unauthorized
+          access.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>7. Your Rights & Choices</h2>
+        <ul>
+          <li>
+            <strong>Access & Portability:</strong> Request a copy of personal
+            data we hold.
+          </li>
+          <li>
+            <strong>Correction:</strong> Update inaccurate or incomplete
+            information.
+          </li>
+          <li>
+            <strong>Deletion:</strong> Ask us to erase data that is no longer
+            required.
+          </li>
+          <li>
+            <strong>Permission controls:</strong> Use system settings to revoke
+            location, camera, microphone, or notification access; core features
+            may degrade.
+          </li>
+          <li>
+            <strong>Marketing opt-out:</strong> Disable in-app communications or
+            contact us to adjust preferences.
+          </li>
+        </ul>
+        <p>
+          Depending on your jurisdiction (e.g., GDPR, PDPA, CCPA), you may have
+          additional rights. We will honor requests within the timelines
+          mandated by applicable law.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>8. International Data Transfers</h2>
+        <p>
+          Because we operate globally, your information may be processed in
+          countries outside your own. We rely on safeguard mechanisms such as
+          Standard Contractual Clauses or equivalent legal bases to ensure
+          adequate protection.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>9. Children’s Privacy</h2>
+        <p>
+          The Services are not directed to children under 13 (or the age
+          required by local law). We do not knowingly collect personal data from
+          children. If you believe a child has provided data, contact us to
+          remove it.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>10. Changes to This Policy</h2>
+        <p>
+          We may update this Policy to reflect product, legal, or regulatory
+          changes. We will post the revised version with a new "Last updated"
+          date and, where appropriate, provide additional notice within the app.
+        </p>
+      </section>
+
+      <section class="card contact">
+        <h2>11. Contact Us</h2>
+        <p>
+          If you have questions, concerns, or wish to exercise your privacy
+          rights, contact us at
+          <a href="mailto:support@asdf.id">support@asdf.id</a>. Please include
+          sufficient detail to help us verify your identity and respond quickly.
+        </p>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 ASDF. All rights reserved.</p>
+      </footer>
+    </main>
+  </body>
+</html>
